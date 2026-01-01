@@ -1,0 +1,25 @@
+# Build artifacts
+.build/
+*.xcodeproj
+DerivedData/
+Build/
+
+# macOS
+.DS_Store
+*.swp
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.xcworkspace
+
+# Claude config
+.claude/
+
+# Temporary files
+*.tmp
+*.temp
+untitled folder/
+path/

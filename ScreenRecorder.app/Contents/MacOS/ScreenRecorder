@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get the directory where the app bundle is located
+APP_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+RESOURCES_DIR="$APP_DIR/Resources"
+EXECUTABLE="$RESOURCES_DIR/screenrecord"
+
+# Open Terminal and run the screen recorder
+osascript -e "
+tell application \"Terminal\"
+    activate
+    do script \"clear && echo 'Starting Screen Recorder...' && '$EXECUTABLE'; exit\"
+end tell
+"
